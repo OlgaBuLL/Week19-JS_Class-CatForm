@@ -1,0 +1,130 @@
+span,
+.errorMax {
+  color: rgb(236, 42, 42);
+}
+.errorMax {
+  width: 80%;
+  margin: 0 25% 0;
+  font-size: small;
+  text-align: center;
+}
+body {
+  font-family: "Poppins";
+  font-size: large;
+  background: linear-gradient(white, #f8cddb);
+}
+h5 {
+  color: gainsboro;
+  font-weight: normal;
+}
+
+h1 {
+  width: 45%;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+form {
+  width: 45%;
+  margin: 0 auto;
+  border: 1px solid #f66596;
+  background: #f4f4f4;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+label,
+legend {
+  font-weight: bolder;
+}
+
+label .data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.owner-data {
+  border: 1px solid #f66596;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+}
+
+input:required:valid {
+  border: 1px solid rgb(64, 147, 64);
+}
+
+fieldset input {
+  width: 70%;
+  height: 30px;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  padding-left: 10px;
+  border: 1px solid #f66596;
+}
+
+.gender,
+fieldset label {
+  font-weight: normal;
+}
+
+input:focus:checked {
+  color: #f66596;
+}
+
+fieldset input:focus {
+  outline: none;
+}
+
+#breed {
+  font-family: "Poppins";
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: "Poppins";
+  color: #f66596;
+  letter-spacing: 0.08rem;
+}
+
+.breed,
+.feed-type,
+.cat-sex,
+.comment {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+#breed {
+  border: 1px solid #f66596;
+}
+option:hover {
+  color: #f66596;
+}
+.comment {
+  display: flex;
+}
+
+textarea {
+  margin: 0 auto;
+  border: 1px solid #f66596;
+  border-radius: 6px;
+}
+
+button {
+  margin: 0 42%;
+  border-radius: 6px;
+  border: none;
+  padding: 1rem 2rem;
+  background: #f66596;
+  color: white;
+  font-family: "Poppins";
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+  outline: 2px solid #f66596;
+}

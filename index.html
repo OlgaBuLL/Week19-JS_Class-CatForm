@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <link rel="shortcut icon" href="./assets/images/paw.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/cat-form.css">
+</head>
+
+<body>
+    <h5>* validation with HTML</h5>
+    <form>
+        <h1>Cat</h1>
+
+        <fieldset class="owner-data">
+
+            <legend>Owner's data </legend>
+            <div class="data">
+                <label for="catName">Cat's name</label>
+                <input type="text" id="catName" minlength="3" placeholder="cat's name" />
+            </div>
+            <div class="errorMax"></div>
+            <div class="data">
+                <label for="name">Owner's name<span>*</span></label>
+                <input type="text" id="name" minlength="3" maxlength="10" placeholder="owner's name" pattern='\w+\s+\w+'
+                    required />
+            </div>
+
+
+            <div class="data">
+                <label for="phone">Contacts<span>*</span></label>
+                <input type="tel" id="phone" placeholder="phone number" pattern="\d+" required />
+            </div>
+
+            <div class="data">
+                <label for="email">E-mail<span>*</span></label>
+                <input type="email" id="email" placeholder="e-mail" minlength="8" required />
+            </div>
+
+            <div id="errorsInfo"></div>
+        </fieldset>
+
+        <div class="breed">
+            <label for="breed">Breed</label>
+            <select name="breed" id="breed" required>
+                <option value="Choose breed" disabled selected="selected">Choose breed</option>
+                <option value="Munchkin">Munchkin</option>
+                <option value="Turkish Angora">Turkish Angora</option>
+                <option value="Persian">Persian</option>
+                <option value="Pooch">Pooch</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="feed-type">
+            <div>
+                <label for="feed">Feed</label>
+            </div>
+            <div><input type="checkbox" name="feed" value="Dry food" /> Dry food</div>
+            <div><input type="checkbox" name="feed" value="Wet food" /> Wet food</div>
+            <div><input type="checkbox" name="feed" value="Natural food" /> Natural food</div>
+        </div>
+
+        <div class="cat-sex">
+            <label for="gender">Pet's gender</label>
+            <br>
+
+            <input type="radio" name="gender" id="female" value="0" required checked /><label class="gender"
+                for="female">Female</label><br>
+            <input type="radio" name="gender" id="male" value="1" /><label class="gender" for="male">Male</label>
+            <br>
+        </div>
+
+        <div class="comment">
+            <label for="comment">Comment</label>
+            <textarea name="message" cols="40" rows="10" id="comment"
+                placeholder="If you want to add smth about your pet, you can text it here😊"></textarea>
+        </div>
+
+        <button type="button" class="button" onclick="checkForm()">Save</button>
+    </form>
+    <!-- <div class="catImage">
+            <div>
+                <label for="myfile">Image of your cat</label></div>
+            <div><input type="file" id="myfile" name="myfile"></div>
+        </div> -->
+
+
+
+    <script src="./assets/scripts/cat-form.js"></script>
+</body>
+
+</html>
